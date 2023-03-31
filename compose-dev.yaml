@@ -1,0 +1,8 @@
+services:
+  pygames:
+    build:
+      context: app
+    volumes:
+      - app-pygames:/app
+volumes:
+  app-pygames:
