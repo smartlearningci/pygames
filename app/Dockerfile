@@ -1,4 +1,4 @@
-FROM 3.11.2-bullseye
+FROM 3.11-bullseye
 
 WORKDIR /app
 
