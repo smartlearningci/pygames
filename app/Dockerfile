@@ -1,4 +1,4 @@
-FROM python:3.11.2-bullseye
+FROM python:3.12.0a6-bullseye
 USER root
 RUN apt-get -y update
 RUN apt-get -y install -y --no-install-recommends git
