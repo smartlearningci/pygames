@@ -1,5 +1,7 @@
 FROM python:3
-
+USER root
+RUN apt-get -y update
+RUN apt-get -y install -y --no-install-recommends git
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
@@ -7,5 +9,9 @@ COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
+RUN useradd -s /bin/bash -m vscode
 
-CMD [ "python", "./basic_scene.py" ]
+
+ENTRYPOINT ["sleep", "infinity"]
+
+
