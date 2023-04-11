@@ -1,4 +1,4 @@
-FROM python
+FROM python:3.9-bullseye
 USER root
 RUN apt-get -y update
 RUN apt-get -y install -y --no-install-recommends git
