@@ -1,4 +1,4 @@
-FROM python:3.7-bullseye
+FROM pypy:3.9-7.3.11-windowsservercore-ltsc2022
 USER root
 RUN apt-get -y update
 RUN apt-get -y install -y --no-install-recommends git
