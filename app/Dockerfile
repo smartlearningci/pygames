@@ -1,4 +1,4 @@
-FROM pypy:3.9-7.3.11-windowsservercore-ltsc2022
+FROM pypy:3
 USER root
 RUN apt-get -y update
 RUN apt-get -y install -y --no-install-recommends git
